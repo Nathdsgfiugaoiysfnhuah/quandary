@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "side": "quandary:block/evil_wood",
+    "end": "block/oak_log_top"
+  }
+}

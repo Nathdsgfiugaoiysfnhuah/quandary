@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "quandary",
+  "version": "${version}",
+
+  "name": "Quandary",
+  "description": "I am quandary",
+  "authors": [
+    "naenae_nz",
+    "ChewyChops_"
+  ],
+  "contact": {
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/quandary/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "naenaenz.quandary.Main"
+    ],
+    "client": [
+      "naenaenz.quandary.ClientMain"
+    ]
+  },
+  "mixins": [
+    "quandary.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

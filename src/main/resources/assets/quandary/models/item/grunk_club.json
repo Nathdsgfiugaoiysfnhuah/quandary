@@ -1,0 +1,6 @@
+{
+  "parent": "quandary:/item/big",
+  "textures": {
+    "layer0": "quandary:item/grunk_club"
+  }
+}
