@@ -22,6 +22,7 @@ public class ItemRegister {
     public static final Item COPPER_KNUCKLES = new CopperKnuckles(new FabricItemSettings().group(ItemGroup.COMBAT));
     public static final Item FLOWER_WAND = new FlowerWand(new FabricItemSettings().group(ItemGroup.COMBAT));
     public static final Item FLOWER_PETAL = new Item(new FabricItemSettings()); //This item is not real just to make it work
+    public static final Item OBSCENELY_LARGE_SWORD_FOR_CRAZED_BOZOS_LIKE_ME = new Item(new FabricItemSettings()); //Quite a chonker
 
     public static void register()
     {
@@ -38,5 +39,6 @@ public class ItemRegister {
         Registry.register(Registry.ITEM, new Identifier("quandary", "copper_knuckles"), COPPER_KNUCKLES);
         Registry.register(Registry.ITEM, new Identifier("quandary", "flower_wand"), FLOWER_WAND);
         Registry.register(Registry.ITEM, new Identifier("quandary", "flower_petal"), FLOWER_PETAL);
+        Registry.register(Registry.ITEM, new Identifier("quandary", "obscenely_large_sword_for_crazed_bozos_like_me"), OBSCENELY_LARGE_SWORD_FOR_CRAZED_BOZOS_LIKE_ME);
     }
 }

@@ -1,6 +1,6 @@
 package naenaenz.quandary.register;
 
-import naenaenz.quandary.entity.DubEntity;
+//import naenaenz.quandary.entity.DubEntity;
 import naenaenz.quandary.entity.projectile.FlowerPetal;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.EntityDimensions;
@@ -18,10 +18,10 @@ public class EntityRegister {
                     .trackRangeBlocks(4).trackedUpdateRate(10) // Makes it work
                     .build() // build or it dont work :(
     );
-    public static final EntityType<DubEntity> DUB = Registry.register(
-            Registry.ENTITY_TYPE,
-            new Identifier("quandary", "dub"),
-            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, DubEntity::new).dimensions(EntityDimensions.fixed(0.75f, 0.75f)).build()
-    );
+//    public static final EntityType<DubEntity> DUB = Registry.register(
+//            Registry.ENTITY_TYPE,
+//            new Identifier("quandary", "dub"),
+//            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, DubEntity::new).dimensions(EntityDimensions.fixed(0.75f, 0.75f)).build()
+//    );
 
 }

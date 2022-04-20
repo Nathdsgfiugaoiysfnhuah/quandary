@@ -1,0 +1,6 @@
+{
+  "parent": "quandary:/item/very_big",
+  "textures": {
+    "layer0": "quandary:item/obscenely_large_sword_for_crazed_bozos_like_me"
+  }
+}

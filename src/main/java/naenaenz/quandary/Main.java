@@ -1,6 +1,6 @@
 package naenaenz.quandary;
 
-import naenaenz.quandary.entity.DubEntity;
+//import naenaenz.quandary.entity.DubEntity;
 import naenaenz.quandary.register.BlockRegister;
 import naenaenz.quandary.register.ItemRegister;
 import naenaenz.quandary.register.ParticleRegister;
@@ -9,7 +9,7 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRe
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static naenaenz.quandary.register.EntityRegister.DUB;
+//import static naenaenz.quandary.register.EntityRegister.DUB;
 
 public class Main implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -27,7 +27,7 @@ public class Main implements ModInitializer {
 		ItemRegister.register();
 		BlockRegister.register();
 		ParticleRegister.register();
-		FabricDefaultAttributeRegistry.register(DUB, DubEntity.createMobAttributes());
+//		FabricDefaultAttributeRegistry.register(DUB, DubEntity.createMobAttributes());
 		LOGGER.info("registered");
 	}
 }
