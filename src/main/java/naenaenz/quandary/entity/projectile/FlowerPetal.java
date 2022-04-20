@@ -1,8 +1,7 @@
-package naenaenz.quandary.entity;
+package naenaenz.quandary.entity.projectile;
 
 import naenaenz.quandary.ClientMain;
 import naenaenz.quandary.EntitySpawnPacket;
-import naenaenz.quandary.Main;
 import naenaenz.quandary.register.EntityRegister;
 import naenaenz.quandary.register.ItemRegister;
 import naenaenz.quandary.register.ParticleRegister;
@@ -13,12 +12,9 @@ import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.projectile.thrown.ThrownItemEntity;
 import net.minecraft.item.Item;
 import net.minecraft.network.Packet;
-import net.minecraft.particle.ParticleTypes;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.world.World;
-
-import java.util.Random;
 
 public class FlowerPetal extends ThrownItemEntity {
     @Override
