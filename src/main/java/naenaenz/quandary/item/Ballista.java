@@ -3,6 +3,7 @@ package naenaenz.quandary.item;
 import naenaenz.quandary.Raycast;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -17,20 +18,23 @@ public class Ballista extends Item {
 
 
     public Ballista(Settings settings) {
-        super(settings.group(ItemGroup.COMBAT).maxDamage(1712));
+        super(settings.group(ItemGroup.COMBAT).maxDamage(752));
     }
 
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         ItemStack itemStack = user.getStackInHand(hand);
-        Entity hitEntity = Raycast.rayCast(user.getPos(), new Vec2f((float) Math.toRadians(user.getYaw()), (float) Math.toRadians(user.getPitch())), world, user,200,true);
+        Entity hitEntity = Raycast.rayCast(user.getEyePos(), new Vec2f((float) Math.toRadians(user.getYaw()), (float) Math.toRadians(user.getPitch())), world, user,256,true);
         if(hitEntity != null)
         {
             if(!world.isClient)
             {
-                hitEntity.damage(DamageSource.player(user),39);
+                if(!(hitEntity instanceof ItemEntity))
+                {
+                    hitEntity.damage(DamageSource.player(user),50);
+                }
             }
         }
-        user.getItemCooldownManager().set(itemStack.getItem(),0);
+        user.getItemCooldownManager().set(itemStack.getItem(),35);
         if(!user.isCreative())
         {
             if(!world.isClient)
